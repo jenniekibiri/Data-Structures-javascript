@@ -19,3 +19,21 @@ return true
 
 
 ```
+
+```Javascript
+Given an array of integers, find the pair of adjacent elements that has the largest product and return that product.
+function adjacentElementsProduct(inputArray) {
+let num1=0 ,num2=0,product=-Infinity;
+for(let i=0;i<inputArray.length;i++){
+    num1=inputArray[i]
+    num2=inputArray[i+1];
+    if(num1*num2>product){
+         product =num1 * num2;
+    }
+}
+return  product
+
+}
+
+
+```
